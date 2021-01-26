@@ -11,5 +11,5 @@ jobs:
       - name: 'Get Previous tag'
         id: previoustag
         uses: "WyriHaximus/github-action-get-previous-tag@v1"
-      - name: Run a one-line script
+      - name: Echo previous tag
         run: echo previous tag is ${{ steps.previoustag.outputs.tag }}
